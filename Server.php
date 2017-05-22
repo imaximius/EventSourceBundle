@@ -70,14 +70,13 @@ class Server
     protected $_response = null;
 
 
-
     /**
      * Start an event source.
      *
-     * @param   bool  $verifyHeaders    Verify headers or not.
-     * @throws  \Hoa\Eventsource\Exception
+     * @param   bool $verifyHeaders Verify headers or not.
+     * @param        $origin
      */
-    public function __construct($verifyHeaders = true)
+    public function __construct($origin, $verifyHeaders = true)
     {
         if (true === $verifyHeaders && true === headers_sent($file, $line)) {
             throw new Exception(
@@ -122,7 +121,7 @@ class Server
         $this->_response->sendHeader('Transfer-Encoding', 'identity');
         $this->_response->sendHeader('Cache-Control',     'no-cache');
         $this->_response->sendHeader('X-Accel-Buffering', 'no');
-        $this->_response->sendHeader('Access-Control-Allow-Origin', '*');
+        $this->_response->sendHeader('Access-Control-Allow-Origin', $origin);
         $this->_response->sendHeader('Access-Control-Allow-Credentials', 'true');
         $this->_response->newBuffer();
 
