@@ -1,5 +1,5 @@
 {
-    "name"       : "hoa/eventsource",
+    "name"       : "drakeroll/eventsource",
     "description": "The Hoa\\Eventsource library.",
     "type"       : "library",
     "keywords"   : ["library", "eventsource", "server", "event", "push",
@@ -33,7 +33,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Hoa\\Eventsource\\": "."
+            "Drakeroll\\Eventsource\\": "."
         }
     },
     "extra": {

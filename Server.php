@@ -122,6 +122,8 @@ class Server
         $this->_response->sendHeader('Transfer-Encoding', 'identity');
         $this->_response->sendHeader('Cache-Control',     'no-cache');
         $this->_response->sendHeader('X-Accel-Buffering', 'no');
+        $this->_response->sendHeader('Access-Control-Allow-Origin', '*');
+        $this->_response->sendHeader('Access-Control-Allow-Credentials', 'true');
         $this->_response->newBuffer();
 
         return;
