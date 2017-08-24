@@ -1,6 +1,6 @@
 {
     "name"       : "imaximius/eventsource",
-    "description": "The Hoa\\Eventsource library.",
+    "description": "Eventsource library for SSE.",
     "type"       : "library",
     "keywords"   : ["library", "eventsource", "server", "event", "push",
                     "http"],
