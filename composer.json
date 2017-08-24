@@ -1,5 +1,5 @@
 {
-    "name"       : "imaximius/eventsource",
+    "name"       : "imaximius/event-source",
     "description": "Eventsource library for SSE.",
     "type"       : "library",
     "keywords"   : ["library", "eventsource", "server", "event", "push",
