@@ -34,7 +34,7 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace Drakeroll\Eventsource;
+namespace Eventsource;
 
 use Hoa\Http;
 
