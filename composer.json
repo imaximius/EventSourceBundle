@@ -14,7 +14,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Eventsource\\": "."
+            "Hoa\\Eventsource\\": "."
         }
     },
     "extra": {

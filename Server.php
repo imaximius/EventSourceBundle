@@ -34,9 +34,10 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-namespace Eventsource;
+namespace Hoa\Eventsource;;
 
 use Hoa\Http;
+use Hoa\Exception;
 
 /**
  * Class \Hoa\Eventsource\Server.
