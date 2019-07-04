@@ -1,20 +1,21 @@
 {
-    "name"       : "imaximius/event-source",
+    "name"       : "garlic/event-source",
     "description": "Eventsource library for SSE.",
     "type"       : "library",
     "keywords"   : ["library", "eventsource", "server", "event", "push",
-                    "http"],
+                    "http", "garlic"],
     "require": {
         "hoa/consistency": "~1.0",
         "hoa/exception"  : "~1.0",
         "hoa/http"       : "~1.0"
     },
+    "type": "symfony-bundle",
     "require-dev": {
         "hoa/test": "~2.0"
     },
     "autoload": {
         "psr-4": {
-            "Hoa\\Eventsource\\": "."
+            "Garlic\\Eventsource\\": "."
         }
     },
     "extra": {
